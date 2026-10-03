@@ -1,0 +1,13 @@
+creative_commerce:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_HOST', 'localhost') }}"
+      port: "{{ env_var('DBT_PORT', '5432') | int }}"
+      user: "{{ env_var('DBT_USER', 'commerce') }}"
+      password: "{{ env_var('DBT_PASSWORD', 'commerce') }}"
+      dbname: "{{ env_var('DBT_DATABASE', 'commerce') }}"
+      schema: analytics
+      threads: 4
+

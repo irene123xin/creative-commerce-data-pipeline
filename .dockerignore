@@ -1,0 +1,14 @@
+.git
+.env
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+data/raw/*.csv
+data/processed
+outputs
+dbt/target
+dbt/logs
+dbt/dbt_packages
+.DS_Store
+
